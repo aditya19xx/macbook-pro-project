@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook Pro</title>
+    <!--------------------------------- 
+            tailwind css 
+    ------------------------------------>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!------------------------------------------------- 
+                        bootstrap 
+    --------------------------------------------------->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-------------------------------------------             
+                      style css 
+    --------------------------------------------->
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <img src="images/mac.png" alt="">
+            </div>
+            <div>
+                <h1 class="text-5xl">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores. &-core GPU, and
+                    16-core Neural Engine 8GB unified memory 256GB SSD storage Two ThunderBolt / USB 4 ports Magic mouse
+                    magic keyboard - US English </p>
+                <div>
+                    <h3>Memory</h3>
+                    <button id="based-memory" class="btn btn-outline-secondary">8GB unified memory</button>
+                    <button id="extra-memory" class="btn btn-outline-secondary">16GB unified memory</button>
+                </div>
+                <div class="mt-4">
+                    <h3>Storage</h3>
+                    <button id="based-storage" class="btn btn-outline-secondary">256GB SSD Storage</button>
+                    <button id="extra-512-storage" class="btn btn-outline-secondary">512GB SSD Storage</button>
+                    <button id="extra-1TB-storage" class="btn btn-outline-secondary">1TB SSD Storage</button>
+                </div>
+                <div class="mt-4">
+                    <h3>Choose Your Delivery Option</h3>
+                    <button id="free-delivery" class="btn btn-outline-secondary">Friday,August 25 Free Prime Delivery</button>
+                    <button id="paid-delivery" class="btn btn-outline-secondary">Friday,August 21 Delivery Charge $<span>20</span></button>
+                </div>
+
+                <ul class="list-group mt-8">
+                    <li class="list-group-item">Best Price &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $<span>1299</span></li>
+                    <li class="list-group-item">Extra Memory Cost &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; $<span id="memory-cost">0</span> </li>
+                    <li class="list-group-item">Extra Storage Cost &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $<span id="storage-cost">0</span></li>
+                    <li class="list-group-item">Delivery Charge &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $<span id="delivery-cost">0</span></li>
+                    <li class="list-group-item">Total Price &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $<span id="total-price">1299</span>
+                    </li>
+                </ul>
+                <h3 class="mt-5">Add promo code</h3>
+                <div  class="input-group mt-2">
+                    <input id="promo-input" type="text" class="form-control" aria-describedby="button-addon2">
+                    <button id="apply" class="btn btn-outline-secondary" type="button" id="button-addon2">Apply</button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <hr style="border: 1px solid black;">
+        <h1 style="text-align: center;">Total : $<span id="grand-total">1299</span></h1>
+    </footer>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
